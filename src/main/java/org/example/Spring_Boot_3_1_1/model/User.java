@@ -1,6 +1,5 @@
 package org.example.Spring_Boot_3_1_1.model;
 
-
 import jakarta.persistence.*;
 
 @Entity

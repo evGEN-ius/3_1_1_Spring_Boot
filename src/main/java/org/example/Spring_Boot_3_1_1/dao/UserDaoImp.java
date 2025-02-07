@@ -5,14 +5,10 @@ import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.Query;
 import org.example.Spring_Boot_3_1_1.model.User;
 import org.springframework.stereotype.Repository;
-
-
-
 import java.util.List;
 
 @Repository
 public class UserDaoImp implements UserDao {
-
 
     @PersistenceContext
     public EntityManager entityManager;

@@ -1,9 +1,6 @@
 package org.example.Spring_Boot_3_1_1.service;
 
-
-
 import org.example.Spring_Boot_3_1_1.model.User;
-
 import java.util.List;
 
 public interface UserService {

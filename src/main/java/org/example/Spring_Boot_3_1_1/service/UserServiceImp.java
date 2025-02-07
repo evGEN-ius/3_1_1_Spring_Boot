@@ -5,20 +5,16 @@ import org.example.Spring_Boot_3_1_1.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-
 import java.util.List;
 
 @Service
 public class UserServiceImp implements UserService {
 
-    private UserDao userDao;
+    private final UserDao userDao;
 
     @Autowired
-    public void setUserDao(UserDao userDao) {
-        this.userDao = userDao;
-    }
-
+    public UserServiceImp(UserDao userDao) { this.userDao = userDao; }
+    
     public List<User> getAllUsers() {
         return  userDao.getAllUsers();
     }
